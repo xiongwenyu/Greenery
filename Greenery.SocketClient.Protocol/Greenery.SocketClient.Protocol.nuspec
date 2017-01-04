@@ -10,12 +10,12 @@
     <projectUrl>https://github.com/xiongwenyu/Greenery</projectUrl>
     <iconUrl>https://pic.cnblogs.com/avatar/507486/20150212103744.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>»ùÓÚSuperSocket.ClientEngineµÄsocket¿Í»§¶Ë×é¼þ</description>
+    <description>åŸºäºŽSuperSocket.ClientEngineçš„socketå®¢æˆ·ç«¯ç»„ä»¶</description>
     <dependencies>
-      <dependency id="log4net" version="(2.0.3,)" />
-      <dependency id="SuperSocket.ClientEngine" version="(0.8.0.7,)" />
-      <dependency id="SuperSocket.ProtoBase" version="(1.7.0.12,)" />
-      <dependency id="Newtonsoft.Json" version="(6.0.1,)" />
+      <dependency id="log4net" version="[2.0.3,)" />
+      <dependency id="SuperSocket.ClientEngine" version="[0.8.0.7,)" />
+      <dependency id="SuperSocket.ProtoBase" version="[1.7.0.12,)" />
+      <dependency id="Newtonsoft.Json" version="[6.0.1,)" />
     </dependencies>
     <releaseNotes>First release</releaseNotes>
     <copyright>Copyright 2017</copyright>

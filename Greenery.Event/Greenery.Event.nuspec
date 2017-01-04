@@ -12,11 +12,11 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <dependencies>
-      <dependency id="Greenery.SocketClient.Protocol" version="(1.0.0.1,)" />
-      <dependency id="SuperSocket.ClientEngine" version="(0.8.0.7,)" />
-      <dependency id="SuperSocket.ProtoBase" version="(1.7.0.12,)" />
-      <dependency id="Newtonsoft.Json" version="(6.0.1,)" />
-      <dependency id="log4net" version="(2.0.3,)" />
+      <dependency id="Greenery.SocketClient.Protocol" version="[1.0.0.1,)" />
+      <dependency id="SuperSocket.ClientEngine" version="[0.8.0.7,)" />
+      <dependency id="SuperSocket.ProtoBase" version="[1.7.0.12,)" />
+      <dependency id="Newtonsoft.Json" version="[6.0.1,)" />
+      <dependency id="log4net" version="[2.0.3,)" />
     </dependencies>
     <releaseNotes>Fix bug</releaseNotes>
     <copyright>Copyright 2017</copyright>
