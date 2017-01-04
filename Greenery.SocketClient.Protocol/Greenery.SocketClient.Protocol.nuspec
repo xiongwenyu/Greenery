@@ -1,25 +1,24 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>GreeneryMessageQueueMiddlewareClient</id>
+    <id>Greenery.SocketClient.Protocol</id>
     <version>$version$</version>
-    <title>Greenery.MessageQueueMiddleware.Client</title>
+    <title>Greenery.SocketClient.Protocol</title>
     <authors>maxyu</authors>
     <owners>maxyu</owners>
-   <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>https://github.com/xiongwenyu/Greenery</projectUrl>
     <iconUrl>https://pic.cnblogs.com/avatar/507486/20150212103744.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>基于SuperSocket.ClientEngine的socket客户端组件</description>
     <dependencies>
-      <dependency id="Greenery.SocketClient.Protocol" version="(1.0.0.1,)" />
+      <dependency id="log4net" version="(2.0.3,)" />
       <dependency id="SuperSocket.ClientEngine" version="(0.8.0.7,)" />
       <dependency id="SuperSocket.ProtoBase" version="(1.7.0.12,)" />
       <dependency id="Newtonsoft.Json" version="(6.0.1,)" />
-      <dependency id="log4net" version="(2.0.3,)" />
     </dependencies>
-    <releaseNotes>Fix bug</releaseNotes>
+    <releaseNotes>First release</releaseNotes>
     <copyright>Copyright 2017</copyright>
-    <tags>Greenery.MessageQueueMiddleware.Client</tags>
+    <tags>Greenery.SocketClient.Protocol</tags>
   </metadata>
 </package>
