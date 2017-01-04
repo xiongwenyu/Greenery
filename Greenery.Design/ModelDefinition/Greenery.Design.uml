@@ -1,0 +1,1006 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="e5634087-1a01-40fc-80ce-fce7977f7ff9"
+  name="Greenery.Design" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction
+        Id="eecee4f3-35a6-4012-9376-91c9a7171d0b"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <messageOccurrenceSpecification
+            Id="8d1b31c5-196e-4a8b-a01f-a2475bae4b77"
+            name="MessageOccurrenceSpecification39">
+            <covered>
+              <lifelineMoniker
+                Id="347c253c-20ef-4480-a7f3-e5c046f06f2c"
+                LastKnownName="消息发布者"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="06dda36d-a795-42df-b6d5-902ad79bd173"
+            name="BehaviorExecutionSpecification13">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="347c253c-20ef-4480-a7f3-e5c046f06f2c"
+                LastKnownName="消息发布者"
+                LastKnownLocation="Greenery.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="03ac5e36-c617-4fe6-b938-eea76c7511b5"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="Greenery.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ee4aa31a-58d4-4691-a74a-5035f0f9a35b"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="Greenery.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="3a210f81-9c41-452b-b8bf-3e5dd9f71b67"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="Greenery.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="11df2695-abd9-490d-a766-5893eb51bfd5"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="Greenery.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ee4aa31a-58d4-4691-a74a-5035f0f9a35b"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="37e8db44-9edf-4091-9692-0e5c37af88f3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Greenery.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="347c253c-20ef-4480-a7f3-e5c046f06f2c"
+                LastKnownName="消息发布者"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3a210f81-9c41-452b-b8bf-3e5dd9f71b67"
+            name="MessageOccurrenceSpecification40">
+            <covered>
+              <lifelineMoniker
+                Id="347c253c-20ef-4480-a7f3-e5c046f06f2c"
+                LastKnownName="消息发布者"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="d3b6eb51-122a-4345-b6db-264d7217f135"
+            name="BehaviorExecutionSpecification15">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="3df518da-b10b-494b-8735-f872e037fcde"
+                LastKnownName="ExecutionOccurrenceSpecification30"
+                LastKnownLocation="Greenery.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ac85a7a2-d904-4b1d-9383-a5c625cc1e06"
+                LastKnownName="ExecutionOccurrenceSpecification29"
+                LastKnownLocation="Greenery.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="61fa3b91-5555-4de9-b71e-59f58754e357"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="Greenery.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ac85a7a2-d904-4b1d-9383-a5c625cc1e06"
+            name="ExecutionOccurrenceSpecification29">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="55910bb0-a12c-449d-9bb2-237512c3d103"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Greenery.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="91ee3e3f-6499-4407-80a7-4bf95a795cfb"
+            name="MessageOccurrenceSpecification43">
+            <event>
+              <sendOperationEventMoniker
+                Id="c4668b3d-20d6-4402-9588-0ee199efa9c0"
+                LastKnownLocation="Greenery.Design.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="97e27eef-4cfc-4b9a-b5d4-35dacdac334d"
+                LastKnownName="消息订阅者"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="61fa3b91-5555-4de9-b71e-59f58754e357"
+            name="MessageOccurrenceSpecification44">
+            <event>
+              <receiveOperationEventMoniker
+                Id="d208f7e1-3c31-42c9-85cf-8fcfd9b7e180"
+                LastKnownLocation="Greenery.Design.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="3df518da-b10b-494b-8735-f872e037fcde"
+            name="ExecutionOccurrenceSpecification30">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="446274f8-0fb6-4e1f-933c-ad0a1f12d9e5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Greenery.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e977eb3d-c6bf-4d30-8551-cae24546aa1e"
+            name="BehaviorExecutionSpecification14">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e214d534-2b31-4f22-87b5-7508328976b1"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="Greenery.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f62f2582-9508-443d-81e5-b498069e0d52"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="Greenery.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="52a359b1-fb77-4cb4-b043-664fb9314f29"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="Greenery.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f62f2582-9508-443d-81e5-b498069e0d52"
+            name="ExecutionOccurrenceSpecification27">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a7a3dd17-a3cf-4ad1-9e2c-39b8a33a8d67"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Greenery.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="52a359b1-fb77-4cb4-b043-664fb9314f29"
+            name="MessageOccurrenceSpecification42">
+            <event>
+              <receiveOperationEventMoniker
+                Id="12ceb918-7f32-48bf-8665-8fad6895f21e"
+                LastKnownLocation="Greenery.Design.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="11df2695-abd9-490d-a766-5893eb51bfd5"
+            name="MessageOccurrenceSpecification41">
+            <event>
+              <sendOperationEventMoniker
+                Id="a366b7f2-2f0e-458f-acae-95b45165e403"
+                LastKnownLocation="Greenery.Design.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="347c253c-20ef-4480-a7f3-e5c046f06f2c"
+                LastKnownName="消息发布者"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="03ac5e36-c617-4fe6-b938-eea76c7511b5"
+            name="ExecutionOccurrenceSpecification26">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f976f32c-bd73-4d0d-8aeb-b55b5b59ea42"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Greenery.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="347c253c-20ef-4480-a7f3-e5c046f06f2c"
+                LastKnownName="消息发布者"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e214d534-2b31-4f22-87b5-7508328976b1"
+            name="ExecutionOccurrenceSpecification28">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f040e6f4-c186-42fd-9939-38a545f94a5e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Greenery.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="3dc9dd07-d7a2-4b1f-afe7-8d026a49b785"
+            name="BehaviorExecutionSpecification16">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="324460e1-08f5-4e01-8448-fb7335030ce4"
+                LastKnownName="ExecutionOccurrenceSpecification32"
+                LastKnownLocation="Greenery.Design.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4bbf595b-76f6-431a-80b5-46bb99598b43"
+                LastKnownName="ExecutionOccurrenceSpecification31"
+                LastKnownLocation="Greenery.Design.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="44b084ab-749c-4423-8ed8-4c2851144397"
+                LastKnownName="MessageOccurrenceSpecification46"
+                LastKnownLocation="Greenery.Design.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4bbf595b-76f6-431a-80b5-46bb99598b43"
+            name="ExecutionOccurrenceSpecification31">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7b747a39-67ca-4b3f-b89c-bb8c9f5375b8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Greenery.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="32d54ffb-2815-4252-8397-a3572ce687d0"
+            name="MessageOccurrenceSpecification45">
+            <event>
+              <sendOperationEventMoniker
+                Id="49aa58f1-3c2c-4fbb-a9d3-1cfe6dd8cca2"
+                LastKnownLocation="Greenery.Design.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="97e27eef-4cfc-4b9a-b5d4-35dacdac334d"
+                LastKnownName="消息订阅者"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="44b084ab-749c-4423-8ed8-4c2851144397"
+            name="MessageOccurrenceSpecification46">
+            <event>
+              <receiveOperationEventMoniker
+                Id="8bc50675-b74a-43b3-bb34-092db34cd818"
+                LastKnownLocation="Greenery.Design.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="324460e1-08f5-4e01-8448-fb7335030ce4"
+            name="ExecutionOccurrenceSpecification32">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a51f561e-5e40-44a3-b3fb-ac0fece9f651"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Greenery.Design.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="347c253c-20ef-4480-a7f3-e5c046f06f2c"
+            name="消息发布者"
+            isActor="false"
+            lifelineDisplayName="‎消息发布者‎">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8d1b31c5-196e-4a8b-a01f-a2475bae4b77"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="Greenery.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ee4aa31a-58d4-4691-a74a-5035f0f9a35b"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="Greenery.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="03ac5e36-c617-4fe6-b938-eea76c7511b5"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="Greenery.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="0a2eee06-ceb9-4550-b187-5a6a9710da8a"
+            name="事件发布器"
+            isActor="false"
+            lifelineDisplayName="‎事件发布器‎">
+            <represents>
+              <propertyMoniker
+                Id="9be32154-07a5-41d5-8013-03e1db4e5645"
+                LastKnownLocation="Greenery.Design.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="ac85a7a2-d904-4b1d-9383-a5c625cc1e06"
+                LastKnownName="ExecutionOccurrenceSpecification29"
+                LastKnownLocation="Greenery.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3df518da-b10b-494b-8735-f872e037fcde"
+                LastKnownName="ExecutionOccurrenceSpecification30"
+                LastKnownLocation="Greenery.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f62f2582-9508-443d-81e5-b498069e0d52"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="Greenery.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e214d534-2b31-4f22-87b5-7508328976b1"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="Greenery.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="4bbf595b-76f6-431a-80b5-46bb99598b43"
+                LastKnownName="ExecutionOccurrenceSpecification31"
+                LastKnownLocation="Greenery.Design.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="324460e1-08f5-4e01-8448-fb7335030ce4"
+                LastKnownName="ExecutionOccurrenceSpecification32"
+                LastKnownLocation="Greenery.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="97e27eef-4cfc-4b9a-b5d4-35dacdac334d"
+            name="消息订阅者"
+            isActor="false"
+            lifelineDisplayName="‎消息订阅者‎">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="91ee3e3f-6499-4407-80a7-4bf95a795cfb"
+                LastKnownName="MessageOccurrenceSpecification43"
+                LastKnownLocation="Greenery.Design.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="32d54ffb-2815-4252-8397-a3572ce687d0"
+                LastKnownName="MessageOccurrenceSpecification45"
+                LastKnownLocation="Greenery.Design.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="fbac8683-bd7b-4aaf-94d5-81dacd900a7f"
+            name="创建消息"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="true">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8d1b31c5-196e-4a8b-a01f-a2475bae4b77"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="Greenery.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3a210f81-9c41-452b-b8bf-3e5dd9f71b67"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="Greenery.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c829c78b-66bd-4d14-8897-dcce77dbbf75"
+            name="订阅消息"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false"
+            signatureText="+ 订阅消息()">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="91ee3e3f-6499-4407-80a7-4bf95a795cfb"
+                LastKnownName="MessageOccurrenceSpecification43"
+                LastKnownLocation="Greenery.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="61fa3b91-5555-4de9-b71e-59f58754e357"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="Greenery.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6a200814-c75f-4d11-8d68-b014e97e8a93"
+            name="推送消息"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false"
+            signatureText="+ 推送消息()">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="11df2695-abd9-490d-a766-5893eb51bfd5"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="Greenery.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="52a359b1-fb77-4cb4-b043-664fb9314f29"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="Greenery.Design.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="161180bc-bdbd-46e0-9b3b-89348693307d"
+            name="取消消息订阅"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false"
+            signatureText="+ 取消消息订阅()">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="32d54ffb-2815-4252-8397-a3572ce687d0"
+                LastKnownName="MessageOccurrenceSpecification45"
+                LastKnownLocation="Greenery.Design.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="44b084ab-749c-4423-8ed8-4c2851144397"
+                LastKnownName="MessageOccurrenceSpecification46"
+                LastKnownLocation="Greenery.Design.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="9be32154-07a5-41d5-8013-03e1db4e5645"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="7797bb25-8287-4eb4-8234-ea20fac82efb"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="7797bb25-8287-4eb4-8234-ea20fac82efb"
+        name="事件发布器"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="1ea014bb-f26b-400e-bf98-08b5450fb654"
+            name="创建消息并推送"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="83a9a027-811c-4d9d-b117-482e011f9c53"
+            name="推送消息"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="17e14f42-3940-4b24-81d9-05529eee283c"
+            name="订阅消息"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c323dc2c-b27e-4117-b88a-54c71f916bc0"
+            name="取消消息订阅"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="37e8db44-9edf-4091-9692-0e5c37af88f3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f976f32c-bd73-4d0d-8aeb-b55b5b59ea42"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a7a3dd17-a3cf-4ad1-9e2c-39b8a33a8d67"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f040e6f4-c186-42fd-9939-38a545f94a5e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="a366b7f2-2f0e-458f-acae-95b45165e403">
+        <operation>
+          <operationMoniker
+            Id="83a9a027-811c-4d9d-b117-482e011f9c53"
+            LastKnownName="推送消息"
+            LastKnownLocation="Greenery.Design.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="12ceb918-7f32-48bf-8665-8fad6895f21e">
+        <operation>
+          <operationMoniker
+            Id="83a9a027-811c-4d9d-b117-482e011f9c53"
+            LastKnownName="推送消息"
+            LastKnownLocation="Greenery.Design.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="55910bb0-a12c-449d-9bb2-237512c3d103"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="446274f8-0fb6-4e1f-933c-ad0a1f12d9e5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="c4668b3d-20d6-4402-9588-0ee199efa9c0">
+        <operation>
+          <operationMoniker
+            Id="17e14f42-3940-4b24-81d9-05529eee283c"
+            LastKnownName="订阅消息"
+            LastKnownLocation="Greenery.Design.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="d208f7e1-3c31-42c9-85cf-8fcfd9b7e180">
+        <operation>
+          <operationMoniker
+            Id="17e14f42-3940-4b24-81d9-05529eee283c"
+            LastKnownName="订阅消息"
+            LastKnownLocation="Greenery.Design.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7b747a39-67ca-4b3f-b89c-bb8c9f5375b8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a51f561e-5e40-44a3-b3fb-ac0fece9f651"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="49aa58f1-3c2c-4fbb-a9d3-1cfe6dd8cca2">
+        <operation>
+          <operationMoniker
+            Id="c323dc2c-b27e-4117-b88a-54c71f916bc0"
+            LastKnownName="取消消息订阅"
+            LastKnownLocation="Greenery.Design.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="8bc50675-b74a-43b3-bb34-092db34cd818">
+        <operation>
+          <operationMoniker
+            Id="c323dc2c-b27e-4117-b88a-54c71f916bc0"
+            LastKnownName="取消消息订阅"
+            LastKnownLocation="Greenery.Design.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="657f9e93-7df1-44b0-bbb9-3bed30c462ea"
+        name="订阅者"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f8fa3589-6519-4d08-87c4-3a38987e851d"
+        name="发布者"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b7863b0c-bc2c-4029-8f55-08e4495ea846"
+            isDerived="false"
+            sourceEndRoleName="发布者"
+            targetEndRoleName="发布事件"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e572ac41-fec7-48f4-bd8a-060e049467a0"
+              LastKnownName="发布事件"
+              LastKnownLocation="Greenery.Design.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5bbb9554-9b17-464d-9cec-6ee5e652a9a5"
+                  name="发布者"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b979437e-3a4b-480f-aa82-4f5198a2c937"
+                  name="发布事件"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e572ac41-fec7-48f4-bd8a-060e049467a0"
+        name="发布事件"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="4e1df149-5ca7-44c2-b279-466b7f012266">
+            <useCaseMoniker
+              Id="ca4087c0-0c3d-42eb-aa9b-6318db3cee43"
+              LastKnownName="事件"
+              LastKnownLocation="Greenery.Design.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ca4087c0-0c3d-42eb-aa9b-6318db3cee43"
+        name="事件"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0772d53d-a37a-4f14-a87a-fbf9d8dec1ba"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="739b46bf-2e3b-445c-b7ca-b862dc92381a"
+        name="事件及消息组件（Greenery.Event）"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="8cd9ccac-32ea-4b4f-977b-52db9678648a"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="5e436f73-8ce2-4ff2-91ee-c5420e2501af"
+                LastKnownName="IPublisher（事件发布器）"
+                LastKnownLocation="Greenery.Design.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="6d52f22d-becd-4d4b-a8ba-5bbdb10385b9"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="5647b7bb-9cde-49cb-8ec7-623a7a9d1a8d"
+                LastKnownName="IEventHandler（事件订阅回调处理器）"
+                LastKnownLocation="Greenery.Design.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="a8615c48-d00d-4bf4-a6f4-c9effa923d34"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e3757224-cb40-4852-ae85-987660b7c187"
+                LastKnownName="IEvent(事件接口)"
+                LastKnownLocation="Greenery.Design.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e3757224-cb40-4852-ae85-987660b7c187"
+        name="IEvent(事件接口)"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="5e436f73-8ce2-4ff2-91ee-c5420e2501af"
+        name="IPublisher（事件发布器）"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="5647b7bb-9cde-49cb-8ec7-623a7a9d1a8d"
+        name="IEventHandler（事件订阅回调处理器）"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="25cbbc03-82f5-4bf2-b454-97f9a5de62a3"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <lifelines>
+          <lifeline
+            Id="f9b2603c-7f13-4627-b4e6-30e4cb3c3165"
+            name="事件发布者"
+            isActor="false"
+            lifelineDisplayName="‎事件发布者‎" />
+          <lifeline
+            Id="3e9da8d5-86bd-49e4-b2fa-21ac6976e4c7"
+            name="事件及消息组件（Greenery.Event） : 事件及消息组件（Greenery.Event）"
+            isActor="false"
+            lifelineDisplayName="‎事件及消息组件（Greenery.Event）‎ : ‎事件及消息组件（Greenery.Event）‎">
+            <represents>
+              <propertyMoniker
+                Id="ae18f5cc-d2be-49e1-b613-8fd521ae9e93"
+                LastKnownLocation="Greenery.Design.uml" />
+            </represents>
+          </lifeline>
+          <lifeline
+            Id="52654a4e-5596-4cd3-8ceb-2e0d24824744"
+            name="事件订阅者"
+            isActor="false"
+            lifelineDisplayName="‎事件订阅者‎" />
+        </lifelines>
+        <ownedAttributesInternal>
+          <property
+            Id="8f506564-3403-477d-9e3c-070d235af232"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="7797bb25-8287-4eb4-8234-ea20fac82efb"
+                LastKnownName="事件发布器"
+                LastKnownLocation="Greenery.Design.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ae18f5cc-d2be-49e1-b613-8fd521ae9e93"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <componentMoniker
+                Id="739b46bf-2e3b-445c-b7ca-b862dc92381a"
+                LastKnownName="事件及消息组件（Greenery.Event）"
+                LastKnownLocation="Greenery.Design.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="0827a993-cba5-4d9a-b30b-829cfdae18b3"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6238020e-d3f8-4309-9eb2-e5e18c48d466"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLComponentDiagram1">
+  <componentModelMoniker Id="83134472-8d86-4739-a85e-2acd75595a5b" />
+  <nestedChildShapes>
+    <componentShape Id="2a92afda-3608-470d-b1bc-5863376fb060" absoluteBounds="4.125, 1.125, 2.99375, 1.5562500000000001" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="6d762d97-10f0-4d3c-a9db-471c84919e7b" LastKnownName="事件及消息组件（Greenery.Event）" />
+      <relativeChildShapes>
+        <providedInterfaceShape Id="a7f53ffc-a2ba-4e5d-bb2e-c3c35dcea359" absoluteBounds="5.5625, 2.6812500000000004, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="95cf47d6-d9f2-46b6-8862-e9e04f6f55ac" LastKnownName="Port2" />
+          <relativeChildShapes />
+        </providedInterfaceShape>
+        <providedInterfaceShape Id="bab9e615-e34a-4d4a-90d3-a65bb684ce41" absoluteBounds="4.28125, 2.6812500000000004, 0.15625, 0.74999999999999956" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="bc6fcf42-e402-4900-b07b-4b5ca835185f" LastKnownName="Port3" />
+          <relativeChildShapes />
+          <moveableDecoratorHostShapes>
+            <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="2.93481441338857, 3.5849772135416669, 2.3020833333333335, 0.15087890625" shapeFieldName="Label" />
+          </moveableDecoratorHostShapes>
+        </providedInterfaceShape>
+        <providedInterfaceShape Id="fffc93f0-6c4b-4e02-908d-12ddad9913ce" absoluteBounds="7.11875, 2.03125, 0.40625, 0.15625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <providedInterfaceMoniker Id="dd3914ef-1958-4086-98ed-05615b971e65" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </providedInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+  </nestedChildShapes>
+</componentDiagram>

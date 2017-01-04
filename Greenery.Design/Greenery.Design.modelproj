@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{edd7f875-507d-4174-b989-1cafaf1fa787}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Greenery.Design</Name>
+    <RootNamespace>Greenery.Design</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="Message1.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Message1.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Message1.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLComponentDiagram1.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLComponentDiagram1.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLComponentDiagram1.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLUseCaseDiagram1.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLUseCaseDiagram1.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLUseCaseDiagram1.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Greenery.Design.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Greenery.Event.Test\Greenery.Event.Test.csproj">
+      <Name>Greenery.Event.Test</Name>
+      <Project>{7d493334-9341-4c1f-8ab5-1a1bc6df1a54}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Greenery.Event\Greenery.Event.csproj">
+      <Name>Greenery.Event</Name>
+      <Project>{c37b3574-0b72-49c7-a66b-857857a28178}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Greenery.MessageQueueMiddleware\Greenery.MessageQueueMiddleware.csproj">
+      <Name>Greenery.MessageQueueMiddleware</Name>
+      <Project>{7a34c6a1-426a-4c95-8045-fe980b8846c8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Greenery.MQM.Services\Greenery.MQM.Services.csproj">
+      <Name>Greenery.MQM.Services</Name>
+      <Project>{7cd623f0-c398-4a74-ba46-93542774b97c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Greenery.MQM.Storage\Greenery.MQM.Storage.csproj">
+      <Name>Greenery.MQM.Storage</Name>
+      <Project>{ab0ad205-1edd-4a63-8f0d-100b16ef9912}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Greenery.MQMForRedis\Greenery.MQMForRedis.csproj">
+      <Name>Greenery.MQMForRedis</Name>
+      <Project>{f72fc29c-ac28-40ae-b899-9861d0a922e5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Greenery.SocketClient.Protocol\Greenery.SocketClient.Protocol.csproj">
+      <Name>Greenery.SocketClient.Protocol</Name>
+      <Project>{28827dd5-9a9c-413f-b142-85bf52c1fb37}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Greenery.SocketServer.Protocol\Greenery.Socket.Protocol.csproj">
+      <Name>Greenery.Socket.Protocol</Name>
+      <Project>{4e53c898-f28f-4882-8f71-40c578ade214}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

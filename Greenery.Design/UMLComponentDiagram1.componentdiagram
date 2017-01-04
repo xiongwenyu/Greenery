@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="83134472-8d86-4739-a85e-2acd75595a5b" name="UMLComponentDiagram1" linkedPackageId="78b674d4-4849-4a0c-96e7-23e6b819d9dd" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="906a1138-5a8d-4398-949d-88607292b0dd">
+      <profileInstance Id="73679319-f05f-413c-8d19-181b22cfb7e0" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7434ef8f-7b98-4590-ac96-4559db48cb1c">
+      <profileInstance Id="47035a23-b94d-433a-ab91-ec3e96615f05" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="6d762d97-10f0-4d3c-a9db-471c84919e7b" name="事件及消息组件（Greenery.Event）" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="739b46bf-2e3b-445c-b7ca-b862dc92381a" />
+        <ownedAttributesInternal>
+          <providedInterface Id="95cf47d6-d9f2-46b6-8862-e9e04f6f55ac" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="8cd9ccac-32ea-4b4f-977b-52db9678648a" />
+            <type_NamedElement>
+              <interfaceMoniker Id="2ed6b4c0-2c76-4bc4-900a-033ad8c5f629" LastKnownName="IPublisher（事件发布器）" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="bc6fcf42-e402-4900-b07b-4b5ca835185f" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="6d52f22d-becd-4d4b-a8ba-5bbdb10385b9" />
+            <type_NamedElement>
+              <interfaceMoniker Id="3995cb43-4aef-43fe-ad59-95e3ebdd97af" LastKnownName="IEventHandler（事件订阅回调处理器）" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="dd3914ef-1958-4086-98ed-05615b971e65" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="a8615c48-d00d-4bf4-a6f4-c9effa923d34" />
+            <type_NamedElement>
+              <interfaceMoniker Id="23e7f928-617b-44a9-b5ef-1723c4365f4c" LastKnownName="IEvent(事件接口)" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="2ed6b4c0-2c76-4bc4-900a-033ad8c5f629" name="IPublisher（事件发布器）" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e436f73-8ce2-4ff2-91ee-c5420e2501af" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="3995cb43-4aef-43fe-ad59-95e3ebdd97af" name="IEventHandler（事件订阅回调处理器）" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5647b7bb-9cde-49cb-8ec7-623a7a9d1a8d" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="23e7f928-617b-44a9-b5ef-1723c4365f4c" name="IEvent(事件接口)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e3757224-cb40-4852-ae85-987660b7c187" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="78b674d4-4849-4a0c-96e7-23e6b819d9dd" name="Greenery.Design">
+    <elementDefinition Id="e5634087-1a01-40fc-80ce-fce7977f7ff9" />
+  </package>
+</componentModel>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sequenceDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLSequenceDiagram1">
+  <SequenceDesignerModelMoniker Id="340fb6ac-5426-4511-96d4-04a37a5539a5" />
+  <nestedChildShapes>
+    <lifelineShape Id="7979240c-a202-4f22-b310-81bee8625f7b" absoluteBounds="3.84375, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="fdf8f3f1-ba86-4167-b7e9-20dbf82bcc17" LastKnownName="事件发布者" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="305a28b0-5ad0-4122-b9e5-5a487f5da047" absoluteBounds="3.4127083333333332, 0.6, 1.0120833333333335, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="fdf8f3f1-ba86-4167-b7e9-20dbf82bcc17" LastKnownName="事件发布者" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="a3ec8b95-f566-4830-af6d-69c4cbaba5c2" absoluteBounds="3.84375, 1, 0, 7">
+          <lifelineMoniker Id="fdf8f3f1-ba86-4167-b7e9-20dbf82bcc17" LastKnownName="事件发布者" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <lifelineShape Id="010d097a-a1ad-42c3-b821-a9276f3891ef" absoluteBounds="9.0833336512247715, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="4a931fc6-0596-46ec-993e-0c856aa42121" LastKnownName="事件订阅者" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="553a2bf0-6241-4edd-a06c-488eb4d259a3" absoluteBounds="8.6522919845581043, 0.6, 1.0120833333333335, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="4a931fc6-0596-46ec-993e-0c856aa42121" LastKnownName="事件订阅者" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="e6d8cc27-9c2c-4d2b-bfa8-84572e804950" absoluteBounds="9.0833336512247715, 1, 0, 7">
+          <lifelineMoniker Id="4a931fc6-0596-46ec-993e-0c856aa42121" LastKnownName="事件订阅者" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+    <lifelineShape Id="df34979e-bb0f-413e-aaa1-4551c85e7123" absoluteBounds="5.9143753178914391, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
+      <lifelineMoniker Id="70b0cc6c-8eab-456e-941e-ea628548a08c" LastKnownName="事件及消息组件（Greenery.Event） : 事件及消息组件（Greenery.Event）" />
+      <relativeChildShapes>
+        <umlLifelineHeadShape Id="36affae3-3e38-445c-ba8b-4461f3593a4d" absoluteBounds="4.9893753178914393, 0.6, 2, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="70b0cc6c-8eab-456e-941e-ea628548a08c" LastKnownName="事件及消息组件（Greenery.Event） : 事件及消息组件（Greenery.Event）" />
+          <relativeChildShapes />
+        </umlLifelineHeadShape>
+        <lifelineHoverShape Id="a3934256-9554-4986-b181-8aeec25ffc9e" absoluteBounds="5.9143753178914391, 1, 0, 7">
+          <lifelineMoniker Id="70b0cc6c-8eab-456e-941e-ea628548a08c" LastKnownName="事件及消息组件（Greenery.Event） : 事件及消息组件（Greenery.Event）" />
+        </lifelineHoverShape>
+      </relativeChildShapes>
+    </lifelineShape>
+  </nestedChildShapes>
+</sequenceDesignerDiagram>

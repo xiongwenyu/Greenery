@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Greenery.Event.PublisherFactory">
+    <Position X="9.25" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventPublisherFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.GreeneryEventConfigurationSection">
+    <Position X="1" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAIAAAIAAAAgAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>GreeneryEventConfigurationSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.BaseEventHandler&lt;TEvent&gt;" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="16" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IEventHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Greenery.Event.Extensions.AssemblyExtensions">
+    <Position X="4.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\AssemblyExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.Implementations.BaseEvent">
+    <Position X="0.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAgAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementations\BaseEvent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Greenery.Event.Implementations.EventHandlerActionWrapper&lt;TEvent&gt;">
+    <Position X="2.75" Y="17.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementations\EventHandlerActionWrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.Implementations.EventPublisher" BaseTypeListCollapsed="true">
+    <Position X="11" Y="7.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AIQgAAAAgUAAEAEBAEAAAAAAAQACAQAAUAAAAAGAgwA=</HashCode>
+      <FileName>Implementations\EventPublisher.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Greenery.Event.Implementations.Exchanges">
+    <Position X="6.5" Y="15.5" Width="2.5" />
+    <NestedTypes>
+      <Class Name="Greenery.Event.Implementations.Exchanges.ExchangesReciver" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Implementations\Exchanges.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAABAAEAAAAAAAQAKAAAEBAAgAAAAAAAAAAAAAFEAAA=</HashCode>
+      <FileName>Implementations\Exchanges.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.Implementations.ExchangesClient">
+    <Position X="9.25" Y="15.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementations\Exchanges.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.Implementations.ObjectsEvent&lt;T&gt;">
+    <Position X="3" Y="10" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementations\ObjectsEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.Implementations.EventJsonWrapper">
+    <Position X="3" Y="11.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementations\ObjectsEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.ObjectModels.DomianEventException">
+    <Position X="10.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModels\DomianEventException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.ObjectModels.EventDescription">
+    <Position X="16.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModels\EventDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.ObjectModels.LocalSubscribeItem">
+    <Position X="8.75" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAgAAAAgAAQAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>ObjectModels\LocalSubscribeItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.ObjectModels.PublisherConstant">
+    <Position X="16" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModels\PublisherConstant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.ObjectModels.PublisherInformaction">
+    <Position X="5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAABAAAAAAAAIAQAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ObjectModels\PublisherInformaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.Event.ObjectModels.SubscribeAttribute">
+    <Position X="12.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>ObjectModels\SubscribeAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.MessageQueueMiddleware.ObjectModels.PublishItem">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAgAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>E:\VisualStudioTeamServices\Greenery\Greenery.MQM.Services\ObjectModels\PublishItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.MessageQueueMiddleware.ObjectModels.SocketResult&lt;T&gt;">
+    <Position X="9" Y="3" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAgAAAAAAAAAEAAAAAAIAAAAAA=</HashCode>
+      <FileName>E:\VisualStudioTeamServices\Greenery\Greenery.MQM.Services\ObjectModels\SocketResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.MessageQueueMiddleware.ObjectModels.SubscribeItem">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAQAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>E:\VisualStudioTeamServices\Greenery\Greenery.MQM.Services\ObjectModels\SubscribeItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Greenery.MessageQueueMiddleware.ObjectModels.ClientIndetity">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAIAQAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>E:\VisualStudioTeamServices\Greenery\Greenery.MQM.Services\ObjectModels\SubscribeItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Greenery.Event.IEvent">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAgAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IEvent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Greenery.Event.IEventHandler">
+    <Position X="0.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IEventHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Greenery.Event.IPublisher">
+    <Position X="6.25" Y="7.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAAUAAAAABAEAAAAAAAQACAQAAUAAAAAGAggA=</HashCode>
+      <FileName>IPublisher.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Greenery.Event.ISubscribeArea">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISubscribeArea.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Greenery.Event.ObjectModels.FilterMode">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAABAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectModels\FilterMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Greenery.Event.RemoteSubscribe">
+    <Position X="0.75" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABACAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>IPublisher.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
