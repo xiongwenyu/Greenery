@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Greenery.Event</id>
+        <version>1.0.0.1</version>
+        <title>Greenery.Event</title>
+        <authors>maxyu</authors>
+        <owners>maxyu</owners>
+        <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+        <projectUrl>https://github.com/xiongwenyu/Greenery</projectUrl>
+        <iconUrl>https://pic.cnblogs.com/avatar/507486/20150212103744.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Greenery.Event</description>
+        <releaseNotes>First release</releaseNotes>
+        <copyright>Copyright 2017 maxyu</copyright>
+        <tags>Message Queue Middleware</tags>
+        <dependencies>
+            <dependency id="Newtonsoft.Json" version="6.0.1" />
+            <dependency id="log4net" version="2.0.3" />
+            <dependency id="SuperSocket.ClientEngine" version="0.8.0.8" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="content\app.config.install.xdt" target="content\app.config.install.xdt" />
+        <file src="content\app.config.uninstall.xdt" target="content\app.config.uninstall.xdt" />
+        <file src="content\web.config.install.xdt" target="content\web.config.install.xdt" />
+        <file src="content\web.config.uninstall.xdt" target="content\web.config.uninstall.xdt" />
+        <file src="lib\net40\Greenery.Event.dll" target="lib\net40\Greenery.Event.dll" />
+        <file src="lib\net40\Greenery.Event.pdb" target="lib\net40\Greenery.Event.pdb" />
+        <file src="lib\net40\Greenery.SocketClient.Protocol.dll" target="lib\net40\Greenery.SocketClient.Protocol.dll" />
+        <file src="lib\net40\Greenery.SocketClient.Protocol.pdb" target="lib\net40\Greenery.SocketClient.Protocol.pdb" />
+        <file src="lib\net45\Greenery.Event.dll" target="lib\net45\Greenery.Event.dll" />
+        <file src="lib\net45\Greenery.Event.pdb" target="lib\net45\Greenery.Event.pdb" />
+        <file src="lib\net45\Greenery.SocketClient.Protocol.dll" target="lib\net45\Greenery.SocketClient.Protocol.dll" />
+        <file src="lib\net45\Greenery.SocketClient.Protocol.pdb" target="lib\net45\Greenery.SocketClient.Protocol.pdb" />
+        <file src="lib\net46\Greenery.Event.dll" target="lib\net46\Greenery.Event.dll" />
+        <file src="lib\net46\Greenery.Event.pdb" target="lib\net46\Greenery.Event.pdb" />
+        <file src="lib\net46\Greenery.SocketClient.Protocol.dll" target="lib\net46\Greenery.SocketClient.Protocol.dll" />
+        <file src="lib\net46\Greenery.SocketClient.Protocol.pdb" target="lib\net46\Greenery.SocketClient.Protocol.pdb" />
+    </files>
+</package>

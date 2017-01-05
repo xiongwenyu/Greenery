@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenery.MessageQueueMiddleware", "Greenery.MessageQueueMiddleware\Greenery.MessageQueueMiddleware.csproj", "{7A34C6A1-426A-4C95-8045-FE980B8846C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenery.MQMForRedis", "Greenery.MQMForRedis\Greenery.MQMForRedis.csproj", "{F72FC29C-AC28-40AE-B899-9861D0A922E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenery.MQM.Services", "Greenery.MQM.Services\Greenery.MQM.Services.csproj", "{7CD623F0-C398-4A74-BA46-93542774B97C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenery.Socket.Protocol", "Greenery.SocketServer.Protocol\Greenery.Socket.Protocol.csproj", "{4E53C898-F28F-4882-8F71-40C578ADE214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenery.Event.Test", "Greenery.Event.Test\Greenery.Event.Test.csproj", "{7D493334-9341-4C1F-8AB5-1A1BC6DF1A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenery.MQM.Storage", "Greenery.MQM.Storage\Greenery.MQM.Storage.csproj", "{AB0AD205-1EDD-4A63-8F0D-100B16EF9912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenery.SocketClient.Protocol", "Greenery.SocketClient.Protocol.Net40\Greenery.SocketClient.Protocol.csproj", "{28827DD5-9A9C-413F-B142-85BF52C1FB37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenery.Event", "Greenery.Event.Net40\Greenery.Event.csproj", "{C37B3574-0B72-49C7-A66B-857857A28178}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A34C6A1-426A-4C95-8045-FE980B8846C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A34C6A1-426A-4C95-8045-FE980B8846C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A34C6A1-426A-4C95-8045-FE980B8846C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A34C6A1-426A-4C95-8045-FE980B8846C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F72FC29C-AC28-40AE-B899-9861D0A922E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F72FC29C-AC28-40AE-B899-9861D0A922E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F72FC29C-AC28-40AE-B899-9861D0A922E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F72FC29C-AC28-40AE-B899-9861D0A922E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CD623F0-C398-4A74-BA46-93542774B97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD623F0-C398-4A74-BA46-93542774B97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD623F0-C398-4A74-BA46-93542774B97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD623F0-C398-4A74-BA46-93542774B97C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E53C898-F28F-4882-8F71-40C578ADE214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E53C898-F28F-4882-8F71-40C578ADE214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E53C898-F28F-4882-8F71-40C578ADE214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E53C898-F28F-4882-8F71-40C578ADE214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D493334-9341-4C1F-8AB5-1A1BC6DF1A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D493334-9341-4C1F-8AB5-1A1BC6DF1A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D493334-9341-4C1F-8AB5-1A1BC6DF1A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D493334-9341-4C1F-8AB5-1A1BC6DF1A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB0AD205-1EDD-4A63-8F0D-100B16EF9912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0AD205-1EDD-4A63-8F0D-100B16EF9912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0AD205-1EDD-4A63-8F0D-100B16EF9912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0AD205-1EDD-4A63-8F0D-100B16EF9912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28827DD5-9A9C-413F-B142-85BF52C1FB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28827DD5-9A9C-413F-B142-85BF52C1FB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28827DD5-9A9C-413F-B142-85BF52C1FB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28827DD5-9A9C-413F-B142-85BF52C1FB37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C37B3574-0B72-49C7-A66B-857857A28178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37B3574-0B72-49C7-A66B-857857A28178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37B3574-0B72-49C7-A66B-857857A28178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37B3574-0B72-49C7-A66B-857857A28178}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -3,7 +3,7 @@ using System;
 
 namespace Greenery.SocketClient.Protocol
 {
-    public abstract class RouteReceiveFilter<TPackageInfo> : FixedHeaderReceiveFilter<TPackageInfo> where TPackageInfo : SuperSocket.ProtoBase.IPackageInfo
+    public abstract class RouteReceiveFilter<TPackageInfo> : FixedHeaderReceiveFilter<TPackageInfo> where TPackageInfo : IPackageInfo
     {
         public RouteReceiveFilter(IRouteProvider routeProvider)
             : base(routeProvider.RouteLength + 4)

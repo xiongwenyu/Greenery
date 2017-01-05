@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C37B3574-0B72-49C7-A66B-857857A28178}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Greenery.Event</RootNamespace>
+    <AssemblyName>Greenery.Event</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\MQMClientBin\Net45\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\MQMClientBin\Net45\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SuperSocket.ClientEngine, Version=0.8.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperSocket.ClientEngine.0.8.0.8\lib\net45\SuperSocket.ClientEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SuperSocket.ProtoBase, Version=1.7.0.13, Culture=neutral, PublicKeyToken=6c80000676988ebb, processorArchitecture=MSIL">
+      <HintPath>..\packages\SuperSocket.ProtoBase.1.7.0.13\lib\net35-client\SuperSocket.ProtoBase.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Greenery.Event\EventPublisherFactory.cs">
+      <Link>EventPublisherFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\Extensions\AssemblyExtensions.cs">
+      <Link>Extensions\AssemblyExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\GreeneryEventConfigurationSection.cs">
+      <Link>GreeneryEventConfigurationSection.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\IEvent.cs">
+      <Link>IEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\IEventHandler.cs">
+      <Link>IEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\Implementations\BaseEvent.cs">
+      <Link>Implementations\BaseEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\Implementations\EventHandlerActionWrapper.cs">
+      <Link>Implementations\EventHandlerActionWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\Implementations\EventPublisher.cs">
+      <Link>Implementations\EventPublisher.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\Implementations\Exchanges.cs">
+      <Link>Implementations\Exchanges.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\Implementations\ObjectsEvent.cs">
+      <Link>Implementations\ObjectsEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\IPublisher.cs">
+      <Link>IPublisher.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\ISubscribeArea.cs">
+      <Link>ISubscribeArea.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\ObjectModels\DomianEventException.cs">
+      <Link>ObjectModels\DomianEventException.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\ObjectModels\EventDescription.cs">
+      <Link>ObjectModels\EventDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\ObjectModels\FilterMode.cs">
+      <Link>ObjectModels\FilterMode.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\ObjectModels\LocalSubscribeItem.cs">
+      <Link>ObjectModels\LocalSubscribeItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\ObjectModels\PublisherConstant.cs">
+      <Link>ObjectModels\PublisherConstant.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\ObjectModels\PublisherInformaction.cs">
+      <Link>ObjectModels\PublisherInformaction.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\ObjectModels\SubscribeAttribute.cs">
+      <Link>ObjectModels\SubscribeAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.Event\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.MQM.Services\ObjectModels\PublishItem.cs">
+      <Link>ObjectModels\PublishItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.MQM.Services\ObjectModels\SocketResult.cs">
+      <Link>ObjectModels\SocketResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Greenery.MQM.Services\ObjectModels\SubscribeItem.cs">
+      <Link>ObjectModels\SubscribeItem.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Greenery.SocketClient.Protocol.Net45\Greenery.SocketClient.Protocol.csproj">
+      <Project>{28827dd5-9a9c-413f-b142-85bf52c1fb37}</Project>
+      <Name>Greenery.SocketClient.Protocol</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -30,26 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Greenery.SocketClient.Protocol, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Greenery.SocketClient.Protocol.1.0.0.4\lib\net40\Greenery.SocketClient.Protocol.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SuperSocket.ClientEngine, Version=0.8.0.7, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SuperSocket.ClientEngine.0.8.0.7\lib\net40-client\SuperSocket.ClientEngine.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SuperSocket.ProtoBase, Version=1.7.0.12, Culture=neutral, PublicKeyToken=6c80000676988ebb, processorArchitecture=MSIL">
-      <HintPath>..\packages\SuperSocket.ProtoBase.1.7.0.12\lib\net35-client\SuperSocket.ProtoBase.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" />
+    <Reference Include="SuperSocket.ClientEngine, Version=0.8.0.7, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="SuperSocket.ProtoBase, Version=1.7.0.12, Culture=neutral, PublicKeyToken=6c80000676988ebb" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -91,11 +78,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Content\Web.config.transform" />
-    <None Include="Content\App.config.transform" />
     <None Include="ClassDiagram1.cd" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Greenery.SocketClient.Protocol.Net45\Greenery.SocketClient.Protocol.csproj">
+      <Project>{28827dd5-9a9c-413f-b142-85bf52c1fb37}</Project>
+      <Name>Greenery.SocketClient.Protocol</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
